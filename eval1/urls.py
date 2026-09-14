@@ -23,4 +23,6 @@ from paginas_app.views import *
 
 urlpatterns = [
     path('', mostrar_home),
+    path('about/',mostrar_servicio)
+
 ]

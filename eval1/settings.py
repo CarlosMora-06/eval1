@@ -45,9 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
-    # Aplicaciones propias
-    # 'estaticas',
+    'paginas_app'
 ]
 
 
@@ -62,7 +60,7 @@ MIDDLEWARE = [
 ]
 
 
-ROOT_URLCONF = 'proyectoweb.urls'
+ROOT_URLCONF = 'eval1.urls'
 
 
 TEMPLATES = [
@@ -86,7 +84,7 @@ TEMPLATES = [
 ]
 
 
-WSGI_APPLICATION = 'proyectoweb.wsgi.application'
+WSGI_APPLICATION = 'eval1.wsgi.application'
 
 
 # -----------------------------------------------------------------------------
@@ -96,7 +94,7 @@ WSGI_APPLICATION = 'proyectoweb.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'proyectoweb_db',
+        'NAME': 'eval1_db',
         'USER': 'root',
         'PASSWORD': '',
         'HOST': 'localhost',
@@ -142,11 +140,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # -----------------------------------------------------------------------------
 
-STATIC_URL = 'static/'
+STATIC_URL = 'eval1/'
 
 
 # -----------------------------------------------------------------------------
 # Email
 # -----------------------------------------------------------------------------
 
-EMAIL_BACKEND = 'django.core.mail.backends.consol
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
